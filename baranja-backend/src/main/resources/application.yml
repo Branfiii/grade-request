@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/baranja_db
+    username: postgres
+    password: daci123
+    driver-class-name: org.postgresql.Driver
+    
+  sql:
+    init:
+      encoding: UTF-8
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
